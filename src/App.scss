@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Rouge+Script&family=Tenor+Sans&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Arima', serif;
+    src: url('./fonts/Arima.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Rouge Script', serif;
+    src: url('./fonts/RougeScript-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Tenor Sans', serif;
+    src: url('./fonts/TenorSans-Regular.ttf') format('truetype');
+}
+
+*{
+    font-family: 'Tenor Sans', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    color-scheme: dark;
+}
+
+.main-container{
+    @apply relative z-0 bg-primary;
+}
+.hero-container{
+    @apply bg-hero-pattern bg-cover bg-no-repeat bg-center;
+}
+.contact-container{
+    @apply relative z-0;
+}
+nav{
+    @apply w-full flex items-center py-5 fixed top-0 z-20 bg-primary;
+
+    .nav{
+        @apply w-full flex justify-between items-center max-w-7xl mx-auto;
+    }
+    .logo-link{
+        @apply flex items-center gap-1;
+    }
+    .logo{
+        @apply xs:w-8  sm:w-14 aspect-square object-contain;
+    }
+    .logo-text{
+        @apply text-white cursor-pointer font-normal leading-tight sm:text-4xl xs:text-2xl;
+        font-family: 'Rouge Script', cursive;
+    }
+    .sm-logo-text{
+        @apply xs:hidden sm:inline-flex;
+    }
+    .link{
+        @apply text-red-500;
+    }
+    .link-container{
+        @apply list-none hidden sm:flex flex-row gap-10;
+    }
+    .li-links{
+        @apply hover:text-red-500 text-base font-medium cursor-pointer;
+    }
+}
+.mobile-nav{
+    @apply sm:hidden flex flex-1 justify-end items-center;
+
+    img{
+        @apply w-[28px] aspect-square object-contain cursor-pointer;
+    }
+    .mobile-nav-container{
+        @apply p-6 absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-20 rounded-xl;
+    }
+    .mobile-link-container{
+        @apply list-none flex justify-end items-start flex-col gap-1;
+    }
+    .mobile-li-links{
+        a{
+            @apply hover:text-red-500 cursor-pointer text-sm ;
+            font-family: 'Arima', serif !important;
+        }
+    }
+}
