@@ -10,15 +10,14 @@ import {
   Works, 
   StarsCanvas} from './components'
 
-import './App.scss'
-import './index.css'
+import './index.scss'
 
 function App() {
 
   return (
     <BrowserRouter>
       <div className='main-container'>
-        <div className='hero-container'>
+        <div className='navigation-container'>
           <Navbar/>
           <Hero/>
         </div>
