@@ -24,6 +24,9 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     color-scheme: dark;
+    h1,h2,h3{
+      font-family: Arima;
+    }
 }
 
 .hash-span {
@@ -292,9 +295,6 @@ nav{
     .hero-name{
       @apply text-purple;
     }
-    h1{
-      font-family: Arima;
-    }
     p{
       @apply mt-2 text-white-100;
     }
@@ -308,4 +308,25 @@ nav{
         @apply w-3 aspect-square rounded-full bg-secondary mb-1;
       }
     }
+}
+.about{
+  .about-text{
+    @apply mt-4 text-secondary text-lg max-w-3xl leading-7;
+  }
+}
+.service-cards-container{
+  @apply mt-20 flex flex-wrap gap-10;
+}
+.service-card-container{
+ @apply xs:w-[250px] w-full;
+
+ .service-card-div{
+  @apply w-full p-[1px] rounded-2xl;
+ }
+ .service-card{
+  @apply bg-tertiary rounded-2xl py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col;
+ }
+ img{
+  @apply w-16 aspect-square object-contain;
+ }
 }
