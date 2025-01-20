@@ -22,15 +22,15 @@ const Computers = ({ isMobile }) => {
       <pointLight intensity={1} />
       <primitive
         object={computer.scene}
-        scale={isMobile ? 0.45 : 0.75}
-        position={isMobile ? [0, -1.5, -1] : [0, -3.2, -1.5]} //3.6 changes the position of the computer to shift down from the text
+        scale={isMobile ? 0.25 : 0.75}
+        position={isMobile ? [0, -1, -1] : [0, -3.2, -1.5]} //3.6 changes the position of the computer to shift down from the text
         rotation={[-0.01, -0.2, -0.1]}
       />
     </mesh>
   );
 };
 
-const ComputersCanvas = () => {
+const ComputersCanvas =  ()  => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
