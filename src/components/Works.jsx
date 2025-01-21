@@ -1,9 +1,81 @@
-import React from 'react'
+import { Tilt } from "react-tilt"
+import { motion } from "framer-motion"
+import { styles } from "../styles"
+import { github } from "../assets"
+import { SectionWrapper } from "../hoc"
+import { projects } from "../constants"
+import { fadeIn, textVariant } from "../utils/motion"
 
-const Works = () => {
-  return (
-    <div>Works</div>
+const ProjectCard = ({index,name,description,tags,image,source_code_link}) =>{
+  return(
+    <motion.div variants={fadeIn("up","spring", index*0.5, 0.75)} className="project-card">
+      <Tilt
+        options={{
+          max: 45,
+          scale: 1, 
+          speed: 450
+        }}
+        className="tilt"
+      >
+        <div className="project-card-container">
+          <img src={image} alt={name} />
+          <div className="card-img_hover project-card-div">
+            <div
+              onClick={()=> window.open(source_code_link, "_blank")}
+              className="project-link"
+            >
+              <img 
+                src={github}
+                alt="github"
+                className="githb-link"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div className="project-card-description">
+          <h3>{name}</h3>
+          <p>{description}</p>
+        </div>
+
+        <div className="tag-div">
+          {tags.map((tag)=>(
+            <p key={tag.name} className={`${tag.color} text-[14px]`}>{tag.name}</p>
+          ))}
+        </div>
+      </Tilt>
+    </motion.div>
   )
 }
 
-export default Works
+const Works = () => {
+  return (
+    <div className="works">
+      <motion.div variants={textVariant()}>
+        <p className={styles.sectionSubText}>My Work</p>
+        <h2 className={styles.sectionHeadText}>Projects.</h2>
+      </motion.div>
+
+      <div className="container">
+        <motion.p
+          variants={fadeIn("","",.1,1)}
+          className="motion-p"
+        >
+          This collection of projects showcases my technical expertise and hands-on experience through real-world applications of my work. Each project is summarized with essential details, along with links to the corresponding code repositories or live website URLs for further exploration.
+        </motion.p>
+      </div>
+
+      <div className="project">
+        {projects.map((project,index)=>(
+          <ProjectCard
+            index={index}
+            key={`project-${index}`}
+            {...project}
+          />
+        ))}
+      </div>
+    </div>
+  )
+}
+
+export default SectionWrapper(Works, "");

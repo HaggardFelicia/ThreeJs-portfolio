@@ -366,3 +366,48 @@ nav{
     @apply w-28 aspect-square;
   }  
 }
+.works{
+  .container{
+    @apply w-full flex;
+    .motion-p{
+      @apply mt-3 text-secondary text-lg max-w-3xl leading-7;
+    }
+  }
+  .project{
+    @apply mt-20 flex flex-wrap gap-7;
+  }
+}
+.project-card{
+  .tilt{
+    @apply bg-tertiary p-5 rounded-2xl w-full sm:w-[360px];
+  }
+  .project-card-container{
+    @apply relative w-full h-[230px];
+
+    img{
+      @apply w-full h-full object-cover rounded-2xl;
+    }
+    .project-card-div{
+      @apply absolute inset-0 flex justify-end m-3;
+    }
+    .project-link{
+      @apply w-10 h-10 black-gradient rounded-full flex justify-center items-center cursor-pointer;
+    }
+    .github-link{
+      @apply w-1/2 h-1/2 object-contain;
+    }
+  }
+  .project-card-description{
+    @apply mt-5;
+
+    h3{
+      @apply text-white font-bold text-2xl;
+    }
+    p{
+      @apply mt-2 text-secondary text-[14px];
+    }
+  }
+  .tag-div{
+    @apply mt-4 flex flex-wrap gap-2;
+  }
+}
