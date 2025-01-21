@@ -330,3 +330,32 @@ nav{
   @apply w-16 aspect-square object-contain;
  }
 }
+.hoc{
+  @apply max-w-7xl mx-auto relative z-0;
+}
+.experience{
+  .timeline{
+    @apply mt-20 flex flex-col;
+  }
+}
+.experience-card{
+  .experience-div{
+    @apply w-full aspect-square flex justify-center items-center;
+  }
+  img{
+    @apply w-[60%] aspect-square object-contain;
+  }
+  h3{
+    @apply text-white text-2xl font-bold;
+  }
+  p{
+    @apply text-secondary text-base font-semibold;
+  }
+  ul{
+    @apply mt-5 list-disc ml-5 space-y-2;
+
+    li{
+      @apply text-white-100 text-[14px] pl-1 tracking-wider;
+    }
+  }
+}
