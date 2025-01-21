@@ -311,7 +311,7 @@ nav{
 }
 .about{
   .about-text{
-    @apply mt-4 text-secondary text-lg max-w-3xl leading-7;
+    @apply mt-4 text-secondary text-base max-w-3xl leading-7;
   }
 }
 .service-cards-container{
@@ -358,4 +358,11 @@ nav{
       @apply text-white-100 text-[14px] pl-1 tracking-wider;
     }
   }
+}
+.tech{
+  @apply flex flex-row flex-wrap justify-center gap-10;
+
+  .balls{
+    @apply w-28 aspect-square;
+  }  
 }
