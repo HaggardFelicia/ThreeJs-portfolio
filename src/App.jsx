@@ -30,6 +30,8 @@ function App() {
           <Contact/>
           <StarsCanvas/>
         </div>
+
+        {/* <a href="https://www.vecteezy.com/free-png/web">Web PNGs by Vecteezy</a> */}
       </div>
     </BrowserRouter>
   )
