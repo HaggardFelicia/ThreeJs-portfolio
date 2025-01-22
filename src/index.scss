@@ -411,3 +411,44 @@ nav{
     @apply mt-4 flex flex-wrap gap-2;
   }
 }
+.testimonials{
+  @apply mt-12 bg-black-100 rounded-[20px];
+
+  .feedback-div{
+    @apply bg-tertiary rounded-2xl min-h-[300x];
+  }
+  .testimonial-card{
+    @apply -mt-10 pb-14 flex flex-wrap gap-7;
+  }
+  .feedback-motion-div{
+    @apply bg-black-200 p-10 rounded-3xl sm:w-[320px] w-full;
+  }
+  .testimonial-text-div{
+    @apply mt-1;
+
+    .testimonial-text{
+      @apply text-white tracking-wider text-lg;
+    }
+    .testimonial-content{
+      @apply mt-7 flex justify-between items-center gap-1;
+      
+      .testimonial-info{
+        @apply flex-1 flex flex-col;
+
+        span{
+          @apply blue-text-gradient;
+        }
+        .testimonial-company-name{
+          @apply text-secondary mt-1 text-xs;
+        }
+      }
+
+      img{
+        @apply w-10 aspect-square rounded-full object-cover;
+      }
+    }
+  }
+  .testimonial-header-text{
+    @apply text-white font-black text-5xl;
+  }
+}
