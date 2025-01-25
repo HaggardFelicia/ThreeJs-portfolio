@@ -6,6 +6,9 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+import frontend from './frontend.png'
+import database from './database.png'
+import link from './link.png'
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -20,6 +23,10 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import express from './tech/express.svg'
+import mongo from './tech/mongo.svg'
+import mysql from './tech/mysql.svg'
+import sass from './tech/sass.svg'
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -32,6 +39,7 @@ import tripguide from "./tripguide.png";
 
 export {
   logo,
+  link,
   backend,
   creator,
   mobile,
@@ -59,4 +67,10 @@ export {
   carrent,
   jobit,
   tripguide,
+  express,
+  mongo,
+  mysql,
+  sass,
+  frontend,
+  database
 };

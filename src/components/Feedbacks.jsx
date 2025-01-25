@@ -20,9 +20,11 @@ const FeedbackCard = ({index,testimonial,name,designation,company,image}) => (
       <div className='testimonial-content'>
         <div className='testimonial-info'>
           <p>
-            <span>@</span> {name}
+            <span className='company-name'>@</span> {name}
           </p>
-          <p className='testimonial-company-name'>{designation} of {company}</p>
+          <p className='testimonial-company-name'>
+            <span className='company-designation'>{designation} </span>of  {company}
+          </p>
         </div>
 
         <img

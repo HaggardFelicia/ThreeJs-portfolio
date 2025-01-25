@@ -1,12 +1,12 @@
 import { Tilt } from "react-tilt"
 import { motion } from "framer-motion"
 import { styles } from "../styles"
-import { github } from "../assets"
+import { github, link } from "../assets"
 import { SectionWrapper } from "../hoc"
 import { projects } from "../constants"
 import { fadeIn, textVariant } from "../utils/motion"
 
-const ProjectCard = ({index,name,description,tags,image,source_code_link}) =>{
+const ProjectCard = ({index,name,description,tags,image,source_code_link, code_url}) =>{
   return(
     <motion.div variants={fadeIn("up","spring", index*0.5, 0.75)} className="project-card">
       <Tilt
@@ -20,16 +20,29 @@ const ProjectCard = ({index,name,description,tags,image,source_code_link}) =>{
         <div className="project-card-container">
           <img src={image} alt={name} />
           <div className="card-img_hover project-card-div">
-            <div
-              onClick={()=> window.open(source_code_link, "_blank")}
-              className="project-link"
-            >
-              <img 
-                src={github}
-                alt="github"
-                className="githb-link"
-              />
+            <div className="project-links">
+              <div
+                onClick={()=> window.open(source_code_link, "_blank")}
+                className="project-link"
+                >
+                <img 
+                  src={github}
+                  alt="github"
+                  className="githb-link"
+                  />
+              </div>
+              <div
+                onClick={()=> window.open(code_url, "_blank")}
+                className="project-link"
+                >
+                <img 
+                  src={link}
+                  alt="website url"
+                  className="website-link"
+                  />
+              </div>
             </div>
+
           </div>
         </div>
 

@@ -23,6 +23,13 @@ import {
     jobit,
     tripguide,
     threejs,
+    express,
+    mongo,
+    mysql,
+    sass,
+    frontend,
+    database,
+    logo
   } from "../assets";
   
   export const navLinks = [
@@ -51,11 +58,11 @@ import {
     },
     {
       title: "Frontend Developer",
-      icon: mobile,
+      icon: frontend,
     },
     {
       title: "Backend Developer",
-      icon: backend,
+      icon: database,
     },
   ];
   
@@ -67,6 +74,14 @@ import {
     {
       name: "CSS 3",
       icon: css,
+    },
+    {
+      name: "SCSS",
+      icon: sass,
+    },
+    {
+      name: "Tailwind CSS",
+      icon: tailwind,
     },
     {
       name: "JavaScript",
@@ -81,20 +96,20 @@ import {
       icon: reactjs,
     },
     {
-      name: "Redux Toolkit",
-      icon: redux,
+      name: "MongoDB",
+      icon: mongo,
     },
     {
-      name: "Tailwind CSS",
-      icon: tailwind,
+      name: "MySql",
+      icon: mysql,
     },
     {
       name: "Node JS",
       icon: nodejs,
     },
     {
-      name: "MongoDB",
-      icon: mongodb,
+      name: 'express',
+      icon: express,
     },
     {
       name: "Three JS",
@@ -108,63 +123,31 @@ import {
       name: "figma",
       icon: figma,
     },
-    {
-      name: "docker",
-      icon: docker,
-    },
   ];
   
   const experiences = [
     {
       title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
+      company_name: "Freelance",
+      icon: logo,
       iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      date: "March 2022 - April 2023",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
-      iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Developed cutting-edge React applications, optimizing performance and user experience. Implemented state-of-the-art solutions, driving significant improvements in application responsiveness.",
+      'Meticulously crafted reusable React components, enhancing code maintainability. Implemented rigorous testing protocols, significantly reducing bug occurrence in production.',
+      'Conducted thorough code reviews, identifying and resolving critical issues. Implemented robust testing strategies, significantly reducing production bugs and improving overall application stability.'
       ],
     },
     {
       title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
+      company_name: "Freelance",
+      icon: logo,
+      iconBg: "#383E56",
+      date: "April 2023 - Present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        'Develop cutting-edge web solutions, leveraging full-stack expertise to create seamless user experiences. Implement modern frameworks, optimizing performance and scalability.',
+        'Drive project completion with efficient coding practices, meeting tight deadlines. Deliver high-quality, responsive web applications that exceed client expectations.',
+        'Conduct thorough testing and debugging to maintain application integrity. Analyse user feedback and performance metrics to identify areas for enhancement. Implement data-driven optimizations.'
       ],
     },
   ];
@@ -217,6 +200,7 @@ import {
       ],
       image: carrent,
       source_code_link: "https://github.com/",
+      code_url: "https://vercel.com/felicia-haggards-projects",
     },
     {
       name: "Job IT",
@@ -238,6 +222,7 @@ import {
       ],
       image: jobit,
       source_code_link: "https://github.com/",
+      code_url: "https://vercel.com/felicia-haggards-projects",
     },
     {
       name: "Trip Guide",
@@ -259,6 +244,7 @@ import {
       ],
       image: tripguide,
       source_code_link: "https://github.com/",
+      code_url: "https://vercel.com/felicia-haggards-projects",
     },
   ];
   

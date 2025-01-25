@@ -25,7 +25,7 @@ function App() {
         <Experience/>
         <Tech/>
         <Works/>
-        <Feedbacks/>
+        {/* <Feedbacks/> */}
         <div className='contact-container'>
           <Contact/>
           <StarsCanvas/>

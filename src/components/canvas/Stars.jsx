@@ -1,4 +1,5 @@
 import React from 'react'
+import { SectionWrapper } from '../../hoc'
 
 const Stars = () => {
   return (
@@ -6,4 +7,4 @@ const Stars = () => {
   )
 }
 
-export default Stars
+export default SectionWrapper(Stars, '');

@@ -393,8 +393,14 @@ nav{
     .project-link{
       @apply w-10 h-10 black-gradient rounded-full flex justify-center items-center cursor-pointer;
     }
+    .project-links{
+      @apply flex gap-x-1;
+    }
     .github-link{
       @apply w-1/2 h-1/2 object-contain;
+    }
+    .website-link{
+      @apply w-full h-full object-contain p-[1px];
     }
   }
   .project-card-description{
@@ -435,11 +441,14 @@ nav{
       .testimonial-info{
         @apply flex-1 flex flex-col;
 
-        span{
+        .company-name{
           @apply blue-text-gradient;
         }
         .testimonial-company-name{
           @apply text-secondary mt-1 text-xs;
+        }
+        .company-designation{
+          @apply green-text-gradient;
         }
       }
 
@@ -450,5 +459,32 @@ nav{
   }
   .testimonial-header-text{
     @apply text-white font-black text-5xl;
+  }
+}
+.contact{
+  @apply xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden;
+
+  .contact-motion-div{
+    @apply flex-[0.75] bg-black-100 p-8 rounded-2xl;
+  }
+  .form-container{
+    @apply mt-12 flex flex-col gap-8;
+
+    label{
+      @apply flex flex-col;
+
+      span{
+        @apply text-white font-medium mb-4;
+      }
+      input, textarea{
+        @apply bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium;
+      }
+    }
+    button{
+      @apply bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl;
+    }
+  }
+  .Earth-Canvas-Div{
+    @apply xl:flex-1 xl:h-auto md:h-[550px] h-[350px];
   }
 }
