@@ -15,8 +15,50 @@ const Contact = () => {
   })
   const [loading, setLoading] = useState(false);
 
-  const handleChange = (e) =>{};
-  const handleSubmit = (e) =>{};
+  const handleChange = (e) => {
+    const { target } = e;
+    const { name, value } = target;
+
+    setForm({
+      ...form,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = (e) =>{
+    e.preventDefault();
+    setLoading(true);
+    // 3D_Portfolio_Reply (emailjs template id)
+    // 3D_Portfolio (emailjs service id)
+    // fGQVJ5pDNBYUOF_cU (emailjs public key)
+    // service,template,options,public key
+    emailjs.send(
+      '3D_Portfolio',
+      '3D_Portfolio_Reply',
+      {
+        form_name: form.name,
+        to_name: 'Felicia Haggard',
+        from_email: form.email,
+        to_email: 'haggardwebdev@gmail.com',
+        message: form.message,
+      },
+      'fGQVJ5pDNBYUOF_cU'
+    )
+    .then(()=>{
+      setLoading(false);
+      alert('Thank you! I will get back to you as soon as possible!');
+
+      setForm({
+        name: '',
+        email: '',
+        message: '',
+      })
+    }, (error)=>{
+      setLoading(false);
+      console.log(error);
+      alert('Uh oh something went wrong!');
+    })
+  };
 
   return (
     <div className='contact'>
@@ -68,7 +110,9 @@ const Contact = () => {
             />
           </label>
 
-          <button>
+          <button
+            type='submit'
+          >
             {loading ? 'sending...' : 'send'}
           </button>
         </form>
