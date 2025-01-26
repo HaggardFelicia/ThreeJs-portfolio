@@ -1,18 +1,19 @@
-import {useState, useRef  } from 'react';
-import {motion} from 'framer-motion';
-import emailjs from '@emailjs/browser';
-import { styles } from '../styles';
-import { EarthCanvas } from './canvas';
-import { SectionWrapper } from '../hoc';
-import { slideIn } from '../utils/motion';
+import React, { useRef, useState } from "react";
+import { motion } from "framer-motion";
+import emailjs from "@emailjs/browser";
+import { styles } from "../styles";
+import { EarthCanvas } from "./canvas";
+import { SectionWrapper } from "../hoc";
+import { slideIn } from "../utils/motion";
 
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
-    name: '',
-    email: '',
-    message: '',
-  })
+    name: "",
+    email: "",
+    message: "",
+  });
+
   const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
@@ -25,48 +26,52 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = (e) =>{
+  const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
-    // 3D_Portfolio_Reply (emailjs template id)
-    // 3D_Portfolio (emailjs service id)
-    // fGQVJ5pDNBYUOF_cU (emailjs public key)
-    // service,template,options,public key
-    emailjs.send(
-      '3D_Portfolio',
-      '3D_Portfolio_Reply',
-      {
-        form_name: form.name,
-        to_name: 'Felicia Haggard',
-        from_email: form.email,
-        to_email: 'haggardwebdev@gmail.com',
-        message: form.message,
-      },
-      'fGQVJ5pDNBYUOF_cU'
-    )
-    .then(()=>{
-      setLoading(false);
-      alert('Thank you! I will get back to you as soon as possible!');
 
-      setForm({
-        name: '',
-        email: '',
-        message: '',
-      })
-    }, (error)=>{
-      setLoading(false);
-      console.log(error);
-      alert('Uh oh something went wrong!');
-    })
+    emailjs
+      .send(
+        '3D_Portfolio',
+        'template_5nmgkxs',
+        {
+          from_name: form.name,
+          to_name: "Felicia Haggard",
+          from_email: form.email,
+          to_email: "haggardwebdev@gmail.com",
+          message: form.message,
+        },
+        'fGQVJ5pDNBYUOF_cU'
+      )
+      .then(
+        () => {
+          setLoading(false);
+          alert("Thank you. I will get back to you as soon as possible.");
+
+          setForm({
+            name: "",
+            email: "",
+            message: "",
+          });
+        },
+        (error) => {
+          setLoading(false);
+          console.error(error);
+
+          alert("Uh oh, something went wrong. Please try again!");
+        }
+      );
   };
 
   return (
-    <div className='contact'>
+    <div
+      className='contact'
+    >
       <motion.div
-        variants={slideIn('left', 'tween', 0.2, 1)}
+        variants={slideIn("left", "tween", 0.2, 1)}
         className='contact-motion-div'
       >
-        <p className={styles.sectionSubText}>Get in Touch</p>
+        <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
 
         <form
@@ -81,51 +86,46 @@ const Contact = () => {
               name='name'
               value={form.name}
               onChange={handleChange}
-              placeholder="What's your name?"
-              className=''
+              placeholder="What's your good name?"
             />
           </label>
-
           <label>
-            <span>Your Email</span>
+            <span>Your email</span>
             <input
               type='email'
               name='email'
               value={form.email}
               onChange={handleChange}
-              placeholder="What's your email?"
-              className=''
+              placeholder="What's your web address?"
             />
           </label>
-
           <label>
             <span>Your Message</span>
             <textarea
-              rows='7'
+              rows={7}
               name='message'
               value={form.message}
               onChange={handleChange}
-              placeholder="What do you want to say?"
-              className=''
+              placeholder='What you want to say?'
             />
           </label>
 
           <button
             type='submit'
           >
-            {loading ? 'sending...' : 'send'}
+            {loading ? "Sending..." : "Send"}
           </button>
         </form>
       </motion.div>
 
       <motion.div
-        variants={slideIn('right', 'tween', 0.2, 1)}
+        variants={slideIn("right", "tween", 0.2, 1)}
         className='Earth-Canvas-Div'
       >
-        <EarthCanvas/>
+        <EarthCanvas />
       </motion.div>
     </div>
-  )
-}
+  );
+};
 
-export default SectionWrapper(Contact, 'contact');
+export default SectionWrapper(Contact, "contact");
