@@ -1,27 +1,14 @@
 import {
-    mobile,
-    backend,
-    creator,
     web,
     javascript,
     typescript,
     html,
     css,
     reactjs,
-    redux,
     tailwind,
     nodejs,
-    mongodb,
     git,
     figma,
-    docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
-    carrent,
-    jobit,
-    tripguide,
     threejs,
     express,
     mongo,
@@ -29,7 +16,9 @@ import {
     sass,
     frontend,
     database,
-    logo
+    logo,
+    calculator,
+    searchbar
   } from "../assets";
   
   export const navLinks = [
@@ -181,70 +170,56 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Calculator",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "An online calculator that enables users to perform basic mathematical operations, offering a convenient and efficient tool for both personal and professional use. Created with:",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "typescript",
           color: "green-text-gradient",
         },
         {
           name: "tailwind",
           color: "pink-text-gradient",
         },
+        {
+          name: "next.js",
+          color: "blue-text-gradient",
+        },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
-      code_url: "https://vercel.com/felicia-haggards-projects",
+      image: calculator,
+      source_code_link: "https://github.com/HaggardFelicia/calculator",
+      code_url: "https://simplecalculator-felicia-haggards-projects.vercel.app/",
     },
     {
-      name: "Job IT",
+      name: "Search Bar",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "A straightforward search interface that consists of one input field for data entry and an additional input field for filtering. Created with:",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
-          color: "green-text-gradient",
-        },
-        {
-          name: "scss",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: jobit,
-      source_code_link: "https://github.com/",
-      code_url: "https://vercel.com/felicia-haggards-projects",
-    },
-    {
-      name: "Trip Guide",
-      description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-      tags: [
-        {
-          name: "nextjs",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "supabase",
+          name: "javascript",
           color: "green-text-gradient",
         },
         {
           name: "css",
           color: "pink-text-gradient",
         },
+        {
+          name: "next.js",
+          color: "blue-text-gradient",
+        },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
-      code_url: "https://vercel.com/felicia-haggards-projects",
+      image: searchbar,
+      source_code_link: "https://github.com/HaggardFelicia/Search-bar",
+      code_url: "https://search-bar-gilt-seven.vercel.app/",
     },
   ];
   

@@ -1,7 +1,3 @@
-import logo from "./logo.png";
-import backend from "./backend.png";
-import creator from "./creator.png";
-import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
@@ -10,6 +6,7 @@ import frontend from './frontend.png'
 import database from './database.png'
 import link from './link.png'
 
+// tech
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
@@ -28,21 +25,16 @@ import mongo from './tech/mongo.svg'
 import mysql from './tech/mysql.svg'
 import sass from './tech/sass.svg'
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+// companies
+import logo from "./logo.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+// projects
+import calculator from "./calculator.png"
+import searchbar from "./searchbar.png"
 
 export {
   logo,
   link,
-  backend,
-  creator,
-  mobile,
   web,
   github,
   menu,
@@ -60,17 +52,12 @@ export {
   tailwind,
   typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
-  carrent,
-  jobit,
-  tripguide,
   express,
   mongo,
   mysql,
   sass,
   frontend,
-  database
+  database,
+  calculator,
+  searchbar
 };
