@@ -488,3 +488,6 @@ nav{
     @apply xl:flex-1 xl:h-auto md:h-[550px] h-[350px];
   }
 }
+.stars-canvas-div{
+  @apply w-full h-auto absolute inset-0 z-[-1];
+}
