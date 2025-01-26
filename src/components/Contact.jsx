@@ -32,8 +32,8 @@ const Contact = () => {
 
     emailjs
       .send(
-        '3D_Portfolio',
-        'template_5nmgkxs',
+        process.env.EMAILJS_SERVICE_ID,
+        process.env.EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
           to_name: "Felicia Haggard",
@@ -41,7 +41,7 @@ const Contact = () => {
           to_email: "haggardwebdev@gmail.com",
           message: form.message,
         },
-        'fGQVJ5pDNBYUOF_cU'
+        process.env.EMAILJS_PUBLIC_KEY       
       )
       .then(
         () => {
