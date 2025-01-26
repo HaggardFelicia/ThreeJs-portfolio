@@ -6,7 +6,7 @@ import CanvasLoader from '../Loader'
 
 const Stars = (props) => {
   const ref = useRef();
-  const [sphere] = useState(() => random.inSphere(new Float32Array(5000), { radius:1.2 }));
+  const [sphere] = useState(() => random.inSphere(new Float32Array(5000), { radius: 1.2 }));
 
   useFrame((state, delta) => {
     ref.current.rotation.x -= delta / 10;
@@ -31,13 +31,12 @@ const Stars = (props) => {
 const StarsCanvas = () => {
   return (
     <div className='stars-canvas-div'>
-
-      <Suspense fallback={<CanvasLoader/>}>
+      {/* <Suspense fallback={null}>
         <Canvas camera={{ position: [0, 0, 1] }}>
+        <Preload all />
           <Stars />
-          <Preload all />
         </Canvas>
-      </Suspense>
+      </Suspense> */}
     </div>
   );
 };

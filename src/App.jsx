@@ -28,7 +28,7 @@ function App() {
         {/* <Feedbacks/> */}
         <div className='contact-container'>
           <Contact/>
-          <StarsCanvas/>
+          {/* <StarsCanvas/> */}
         </div>
 
         {/* <a href="https://www.vecteezy.com/free-png/web">Web PNGs by Vecteezy</a> */}
