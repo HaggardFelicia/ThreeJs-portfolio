@@ -31,6 +31,7 @@ import logo from "./logo.png";
 // projects
 import calculator from "./calculator.png"
 import searchbar from "./searchbar.png"
+import sanity_portfolio from './sanity_portfolio.png'
 
 export {
   logo,
@@ -59,5 +60,6 @@ export {
   frontend,
   database,
   calculator,
-  searchbar
+  searchbar,
+  sanity_portfolio
 };

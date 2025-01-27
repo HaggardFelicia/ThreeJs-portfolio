@@ -18,7 +18,8 @@ import {
     database,
     logo,
     calculator,
-    searchbar
+    searchbar,
+    sanity_portfolio
   } from "../assets";
   
   export const navLinks = [
@@ -221,6 +222,35 @@ import {
       source_code_link: "https://github.com/HaggardFelicia/Search-bar",
       code_url: "https://search-bar-gilt-seven.vercel.app/",
     },
+    {
+      name: "Sanity Portfolio",
+      description: "This document serves as my initial portfolio in web development, showcasing various web applications and websites that demonstrate my technical expertise.",
+      tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "typescript",
+          color: "green-text-gradient",
+        },
+        {
+          name: "tailwind",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "next.js",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "sanity",
+          color: "green-text-gradient",
+        },
+      ],
+      image: sanity_portfolio,
+      source_code_link: "https://github.com/HaggardFelicia/Felicia-Haggards-Portfolio",
+      code_url: 'https://felicia-haggards-portfolio.vercel.app/'
+    }
   ];
   
   export { services, technologies, experiences, testimonials, projects };
