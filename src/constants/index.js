@@ -194,7 +194,7 @@ import {
       ],
       image: calculator,
       source_code_link: "https://github.com/HaggardFelicia/calculator",
-      code_url: "https://simplecalculator-felicia-haggards-projects.vercel.app/",
+      code_url: "https://calculator.haggardwebdev.space/",
     },
     {
       name: "Search Bar",
@@ -220,7 +220,7 @@ import {
       ],
       image: searchbar,
       source_code_link: "https://github.com/HaggardFelicia/Search-bar",
-      code_url: "https://search-bar-gilt-seven.vercel.app/",
+      code_url: "https://search.haggardwebdev.space/",
     },
     {
       name: "Sanity Portfolio",
@@ -249,7 +249,7 @@ import {
       ],
       image: sanity_portfolio,
       source_code_link: "https://github.com/HaggardFelicia/Felicia-Haggards-Portfolio",
-      code_url: 'https://felicia-haggards-portfolio.vercel.app/'
+      code_url: 'https://portfolio.haggardwebdev.space/'
     }
   ];
   
