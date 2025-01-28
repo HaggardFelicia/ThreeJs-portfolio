@@ -19,7 +19,9 @@ import {
     logo,
     calculator,
     searchbar,
-    sanity_portfolio
+    sanity_portfolio,
+    portfolio,
+    todo,
   } from "../assets";
   
   export const navLinks = [
@@ -247,9 +249,38 @@ import {
           color: "green-text-gradient",
         },
       ],
-      image: sanity_portfolio,
+      image: portfolio,
       source_code_link: "https://github.com/HaggardFelicia/Felicia-Haggards-Portfolio",
       code_url: 'https://portfolio.haggardwebdev.space/'
+    },
+    {
+      name: "Todo App",
+      description: "This application is a web-based task management tool designed to assist users in managing their tasks. It features an intuitive interface that facilitates the easy entry and removal of tasks.",
+      tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "typescript",
+          color: "green-text-gradient",
+        },
+        {
+          name: "tailwind",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "next.js",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "local storage",
+          color: "green-text-gradient",
+        },
+      ],
+      image: todo,
+      source_code_link: "https://github.com/HaggardFelicia/todo/tree/main",
+      code_url: "https://todo-app.haggardwebdev.space/"
     }
   ];
   
