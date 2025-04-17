@@ -19,14 +19,13 @@ import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
-import threejs from "./tech/threejs.svg";
-import express from './tech/express.svg'
-import mongo from './tech/mongo.svg'
-import mysql from './tech/mysql.svg'
-import sass from './tech/sass.svg'
+import mysql from "./tech/mysql.png"
+import express from "./tech/express.png"
+import sass from "./tech/sass.png"
 
 // companies
 import logo from "./logo.png";
+import hwdlogo from "./company/hwb-logo.png"
 
 // projects
 import calculator from "./calculator.png"
@@ -49,21 +48,27 @@ export {
   html,
   javascript,
   mongodb,
+  mysql,
   nodejs,
   reactjs,
   redux,
   tailwind,
   typescript,
-  threejs,
-  express,
-  mongo,
-  mysql,
-  sass,
   frontend,
   database,
   calculator,
   searchbar,
   sanity_portfolio,
   portfolio,
-  todo
+  todo,
+  express,
+  sass,
+  hwdlogo,
 };
+
+
+// icons attribution
+{/* <a href="https://www.flaticon.com/free-icons/mysql" title="mysql icons">Mysql icons created by pocike - Flaticon</a> */}
+{/* <a href="https://www.flaticon.com/free-icons/sass" title="sass icons">Sass icons created by Freepik - Flaticon</a> */}
+{/* <a href="https://www.flaticon.com/free-icons/graduation-cap" title="graduation cap icons">Graduation cap icons created by Hilmy Abiyyu A. - Flaticon</a> */}
+{/* <a href="https://www.flaticon.com/free-icons/mother" title="mother icons">Mother icons created by Vector Stall - Flaticon</a> */}

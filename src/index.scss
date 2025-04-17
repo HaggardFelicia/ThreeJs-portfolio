@@ -230,7 +230,7 @@
     @apply relative z-0;
 }
 nav{
-    @apply w-full flex items-center py-5 fixed top-0 z-20 bg-primary;
+    @apply w-full flex items-center py-2 fixed top-0 z-20 bg-primary;
 
     .nav{
         @apply w-full flex justify-between items-center max-w-7xl mx-auto;
@@ -239,23 +239,23 @@ nav{
         @apply flex items-center gap-1;
     }
     .logo{
-        @apply xs:w-8  sm:w-14 aspect-square object-contain;
+        @apply xs:w-8  sm:w-10 aspect-square object-contain;
     }
     .logo-text{
-        @apply text-white cursor-pointer font-normal leading-tight sm:text-4xl xs:text-2xl;
+        @apply text-white cursor-pointer font-normal leading-tight sm:text-2xl xs:text-xl;
         font-family: 'Rouge Script', cursive;
     }
     .sm-logo-text{
-        @apply xs:hidden sm:inline-flex;
+        @apply xs:hidden sm:hidden md:inline-flex;
     }
     .link{
-        @apply text-red-500;
+        @apply text-purple;
     }
     .link-container{
-        @apply list-none hidden sm:flex flex-row gap-10;
+        @apply list-none hidden sm:flex flex-row gap-3;
     }
     .li-links{
-        @apply hover:text-red-500 text-base font-medium cursor-pointer;
+        @apply hover:text-purple text-gray-300 text-base font-medium cursor-pointer;
     }
 }
 .mobile-nav{
@@ -265,14 +265,14 @@ nav{
         @apply w-[28px] aspect-square object-contain cursor-pointer;
     }
     .mobile-nav-container{
-        @apply p-6 absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-20 rounded-xl;
+        @apply p-6 absolute top-16 right-0 mx-4 my-2 min-w-[140px] z-20 rounded-xl;
     }
     .mobile-link-container{
         @apply list-none flex justify-end items-start flex-col gap-1;
     }
     .mobile-li-links{
         a{
-            @apply hover:text-red-500 cursor-pointer text-sm ;
+            @apply hover:text-violet-500 text-gray-300 cursor-pointer text-sm ;
             font-family: 'Arima', serif !important;
         }
     }
@@ -290,7 +290,7 @@ nav{
         @apply w-5 h-5 rounded-full bg-purple;
     }
     .hero-line{
-        @apply w-1 sm:h-80 h-40 violet-gradient;
+        @apply w-1  h-40 violet-gradient;
     }
     .hero-name{
       @apply text-purple;
@@ -315,7 +315,7 @@ nav{
   }
 }
 .service-cards-container{
-  @apply mt-20 flex flex-wrap gap-10;
+  @apply mt-20 flex flex-wrap gap-10 xs:mx-auto xs:w-1/2 md:w-full;
 }
 .service-card-container{
  @apply xs:w-[250px] w-full;
@@ -360,21 +360,21 @@ nav{
   }
 }
 .tech{
-  @apply flex flex-row flex-wrap justify-center gap-10;
+  @apply flex flex-row flex-wrap justify-center gap-5;
 
   .balls{
-    @apply w-28 aspect-square;
+    @apply xs:w-16 md:w-20 aspect-square;
   }  
 }
 .works{
   .container{
-    @apply w-full flex;
+    @apply  w-full flex;
     .motion-p{
       @apply mt-3 text-secondary text-lg max-w-3xl md:leading-7 xs:text-sm xs:leading-5;
     }
   }
   .project{
-    @apply mt-20 flex flex-wrap gap-7;
+    @apply  mt-20 flex flex-wrap gap-7;
   }
 }
 .project-card{

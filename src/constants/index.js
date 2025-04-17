@@ -9,19 +9,18 @@ import {
     nodejs,
     git,
     figma,
-    threejs,
-    express,
-    mongo,
-    mysql,
-    sass,
     frontend,
     database,
     logo,
     calculator,
     searchbar,
-    sanity_portfolio,
     portfolio,
     todo,
+    mongodb,
+    mysql,
+    express,
+    sass,
+    hwdlogo
   } from "../assets";
   
   export const navLinks = [
@@ -60,6 +59,10 @@ import {
   
   const technologies = [
     {
+      name: "React JS",
+      icon: reactjs,
+    },
+    {
       name: "HTML 5",
       icon: html,
     },
@@ -68,12 +71,12 @@ import {
       icon: css,
     },
     {
-      name: "SCSS",
-      icon: sass,
-    },
-    {
       name: "Tailwind CSS",
       icon: tailwind,
+    },
+    {
+      name: "SASS",
+      icon: sass,
     },
     {
       name: "JavaScript",
@@ -84,12 +87,8 @@ import {
       icon: typescript,
     },
     {
-      name: "React JS",
-      icon: reactjs,
-    },
-    {
       name: "MongoDB",
-      icon: mongo,
+      icon: mongodb,
     },
     {
       name: "MySql",
@@ -100,12 +99,8 @@ import {
       icon: nodejs,
     },
     {
-      name: 'express',
+      name: "Express",
       icon: express,
-    },
-    {
-      name: "Three JS",
-      icon: threejs,
     },
     {
       name: "git",
@@ -121,7 +116,7 @@ import {
     {
       title: "React.js Developer",
       company_name: "Freelance",
-      icon: logo,
+      icon: hwdlogo,
       iconBg: "#383E56",
       date: "March 2022 - April 2023",
       points: [
@@ -131,15 +126,28 @@ import {
       ],
     },
     {
-      title: "Full stack Developer",
-      company_name: "Freelance",
+      title: "Full-Time Student",
+      company_name: "Student",
       icon: logo,
       iconBg: "#383E56",
-      date: "April 2023 - Present",
+      date: "March 2022 - April 2024",
       points: [
-        'Develop cutting-edge web solutions, leveraging full-stack expertise to create seamless user experiences. Implement modern frameworks, optimizing performance and scalability.',
-        'Drive project completion with efficient coding practices, meeting tight deadlines. Deliver high-quality, responsive web applications that exceed client expectations.',
-        'Conduct thorough testing and debugging to maintain application integrity. Analyse user feedback and performance metrics to identify areas for enhancement. Implement data-driven optimizations.'
+        'Associate of Science in Web Development',
+        ' Relevant Coursework: Interfaces and Usability & Programming for Web Applications & Database Systems & Server-Side Languages',
+        'Professional Development: Professional Seminar 1 & 2'
+      ],
+    },
+    {
+      title: "Stay-At-Home Parent",
+      company_name: "Mom",
+      icon: logo,
+      iconBg: "#383E56",
+      date: "December 2017 - Present",
+      points: [
+        'Built positive and nurturing environments to support child social and emotional growth.',
+        'Bathed, dressed, and helped with teeth brushing as part of bedtime preparation.',
+        'Prepared meals and snacks for child based on dietary guidelines.',
+        'Handled incoming mail, bills and invoices and completed appropriate actions.'       
       ],
     },
   ];

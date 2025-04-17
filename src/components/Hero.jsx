@@ -19,7 +19,7 @@ const Hero = () => {
         </div>
       </div>
         <ComputersCanvas/>
-
+{/* 
         <div className='scroll-container'>
           <a href="#about" >
             <div className="scroll-border">
@@ -36,7 +36,7 @@ const Hero = () => {
               />
             </div>
           </a>
-        </div>
+        </div> */}
     </section>
   )
 }
