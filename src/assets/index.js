@@ -23,6 +23,8 @@ import sass from "./tech/sass.png"
 
 // companies
 import hwdlogo from "./company/hwb-logo.png"
+import parent from "./company/parent.png"
+import graduate from './company/graduate.png'
 
 // projects
 import calculator from "./calculator.png"
@@ -58,6 +60,8 @@ export {
   express,
   sass,
   hwdlogo,
+  parent,
+  graduate
 };
 
 
