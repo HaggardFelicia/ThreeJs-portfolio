@@ -29,11 +29,9 @@ function App() {
         <div className='contact-container'>
           <Contact/>
         </div>
-
-        {/* <a href="https://www.vecteezy.com/free-png/web">Web PNGs by Vecteezy</a> */}
       </div>
     </BrowserRouter>
   )
 }
 
-export default App
+export default App;

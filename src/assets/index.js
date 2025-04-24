@@ -8,7 +8,6 @@ import link from './link.png'
 
 // tech
 import css from "./tech/css.png";
-import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
@@ -16,7 +15,6 @@ import javascript from "./tech/javascript.png";
 import mongodb from "./tech/mongodb.png";
 import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
-import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import mysql from "./tech/mysql.png"
@@ -24,7 +22,6 @@ import express from "./tech/express.png"
 import sass from "./tech/sass.png"
 
 // companies
-import logo from "./logo.png";
 import hwdlogo from "./company/hwb-logo.png"
 
 // projects
@@ -35,14 +32,12 @@ import portfolio from './portfolio.png'
 import todo from './todo.png'
 
 export {
-  logo,
   link,
   web,
   github,
   menu,
   close,
   css,
-  docker,
   figma,
   git,
   html,
@@ -51,7 +46,6 @@ export {
   mysql,
   nodejs,
   reactjs,
-  redux,
   tailwind,
   typescript,
   frontend,

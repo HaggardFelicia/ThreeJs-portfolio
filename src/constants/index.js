@@ -11,7 +11,6 @@ import {
     figma,
     frontend,
     database,
-    logo,
     calculator,
     searchbar,
     portfolio,
@@ -128,7 +127,7 @@ import {
     {
       title: "Full-Time Student",
       company_name: "Student",
-      icon: logo,
+      icon: hwdlogo,
       iconBg: "#383E56",
       date: "March 2022 - April 2024",
       points: [
@@ -140,7 +139,7 @@ import {
     {
       title: "Stay-At-Home Parent",
       company_name: "Mom",
-      icon: logo,
+      icon: hwdlogo,
       iconBg: "#383E56",
       date: "December 2017 - Present",
       points: [

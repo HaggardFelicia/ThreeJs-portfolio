@@ -18,32 +18,3 @@ const styles = {
   };
   
   export { styles };
-
-  // 7xl 72px
-  // 6xl 60px lg
-  // 5xl 40px  base
-  // 4xl 36px sm
-  // 3xl 30px xs
-
-  /*heroHeadText 
-    lg from 80 t0 60
-    base stays at 40
-    sm 60 to 36
-    xs 50 to 30
-    */
-     /*heroSubText 
-    lg from 30 to 28
-    base stays at 16
-    sm 26 to 24
-    xs 20 to 18
-    */
-     /*sectionHeadText 
-    md from 60 t0 40
-    base 38
-    sm 50 to 36
-    xs 40 to 32
-    */
-        /*sectionSubText 
-    base 14 to 26
-    sm 18 to 24
-    */

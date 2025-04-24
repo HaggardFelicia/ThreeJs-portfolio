@@ -1,16 +1,14 @@
 import React, {useEffect, useState} from 'react'
 import { Link } from 'react-router-dom' 
-import {styles} from '../styles'
 import {navLinks} from '../constants'
-import {logo, menu, close} from '../assets'
-import { li } from 'framer-motion/client'
+import { hwdlogo, menu, close} from '../assets'
 
 const Navbar = () => {
   const  [active, setActive] = useState('');
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className={`${styles.paddingX}`}>
+    <nav className={'paddingX'}>
       <div className='nav'>
         <Link 
           to='/' className='logo-link' 
@@ -19,7 +17,7 @@ const Navbar = () => {
             window.scrollTo(0,0);
           }}
         >
-          <img src={logo} alt='logo' className='logo'/>
+          <img src={hwdlogo} alt='logo' className='logo'/>
           <p className='logo-text'>
             Felicia <span className='logo-text sm-logo-text'>Haggard</span>
             </p>
@@ -70,4 +68,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default Navbar;

@@ -28,13 +28,12 @@
       font-family: Arima;
     }
 }
-
+// styles
 .hash-span {
     margin-top: -100px;
     padding-bottom: 100px;
     display: block;
   }
-  
 .black-gradient {
     background: #000000; /* fallback for old browsers */
     background: -webkit-linear-gradient(
@@ -48,7 +47,6 @@
       #000000
     ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
-
 .violet-gradient {
     background: #804dee;
     background: linear-gradient(-90deg, #804dee 0%, rgba(60, 51, 80, 0) 100%);
@@ -58,14 +56,11 @@
       rgba(60, 51, 80, 0) 100%
     );
   }
-  /* red gradient */
-  
 .green-pink-gradient {
     background: "#00cea8";
     background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
     background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
   }
-  
 .orange-text-gradient {
     background: #f12711; /* fallback for old browsers */
     background: -webkit-linear-gradient(
@@ -81,7 +76,6 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  
 .green-text-gradient {
     background: #11998e; /* fallback for old browsers */
     background: -webkit-linear-gradient(
@@ -97,7 +91,6 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  
 .blue-text-gradient {
     /* background: -webkit-linear-gradient(#eee, #333); */
     background: #56ccf2; /* fallback for old browsers */
@@ -114,7 +107,6 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  
 .pink-text-gradient {
     background: #ec008c; /* fallback for old browsers */
     background: -webkit-linear-gradient(
@@ -130,7 +122,29 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  
+.paddingX {
+  @apply px-6;
+}
+.paddingY {
+  @apply sm:py-16 py-6;
+}
+.padding{
+ @apply sm:px-16 px-6 sm:py-16 py-10;
+}
+.heroHeadText{
+ @apply font-black text-white lg:text-[60px] sm:text-[36px] xs:text-[30px] text-[40px] lg:leading-[98px] mt-2;
+}
+.heroSubText{
+ @apply text-[#dfd9ff] font-medium lg:text-[28px] sm:text-[24px] xs:text-[18px] text-[16px] lg:leading-[40px];
+}
+.sectionHeadText{
+ @apply text-white font-black md:text-[40px] sm:text-[32px] xs:text-[30px] text-[36px];
+}
+.sectionSubText{
+ @apply sm:text-[14px] text-[12px] text-secondary uppercase tracking-wider;
+}
+
+
   /* canvas- styles */
 .canvas-loader {
     font-size: 10px;
@@ -370,11 +384,11 @@ nav{
   .container{
     @apply  w-full flex;
     .motion-p{
-      @apply mt-3 text-secondary text-lg max-w-3xl md:leading-7 xs:text-sm xs:leading-5;
+      @apply mt-3 text-white text-lg max-w-3xl md:leading-7 xs:text-sm xs:leading-5;
     }
   }
   .project{
-    @apply  mt-20 flex flex-wrap gap-7;
+    @apply  mt-20 flex flex-wrap gap-7 lg:items-start xs:my-auto xs:items-center;
   }
 }
 .project-card{

@@ -1,6 +1,5 @@
 import { Tilt } from "react-tilt"
 import { motion } from "framer-motion"
-import { styles } from "../styles"
 import { github, link } from "../assets"
 import { SectionWrapper } from "../hoc"
 import { projects } from "../constants"
@@ -65,13 +64,13 @@ const Works = () => {
   return (
     <div className="works">
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>My Work</p>
-        <h2 className={styles.sectionHeadText}>Projects.</h2>
+        <p className={'sectionSubText'}>My Work</p>
+        <h2 className={'sectionHeadText'}>Projects.</h2>
       </motion.div>
 
       <div className="container">
         <motion.p
-          variants={fadeIn("","",.1,1)}
+          variants={fadeIn("","", 1,1)}
           className="motion-p"
         >
           This collection of projects showcases my technical expertise and hands-on experience through real-world applications of my work. Each project is summarized with essential details, along with links to the corresponding code repositories or live website URLs for further exploration.
