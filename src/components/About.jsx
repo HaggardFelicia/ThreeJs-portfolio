@@ -1,7 +1,6 @@
 import React from 'react'
 import { Tilt } from 'react-tilt'
 import { motion } from 'framer-motion'
-import {styles} from '../styles'
 import { services } from '../constants'
 import {fadeIn, textVariant} from '../utils/motion'
 import {SectionWrapper} from '../hoc'
@@ -11,7 +10,7 @@ const ServiceCard = ({index, title, icon}) =>{
     <Tilt className="service-card-container">
         <motion.div 
           variants={fadeIn("right", "spring", 0.5*index, .75)}
-          className='service-card-div green-pink-gradient  shadow-card'
+          className='service-card-div green-blue-gradient  shadow-card'
         >
           <div
             options={{max: 45, scale: 1, speed: 450}}
@@ -33,8 +32,8 @@ const About = () => {
   return (
     <div className={`about `}>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <p className={'sectionSubText'}>Introduction</p>
+        <h2 className={'sectionHeadText'}>Overview.</h2>
       </motion.div>
 
       <motion.p variants={fadeIn("", "", 0.1, 1)} className='about-text'>

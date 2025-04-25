@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
 import { SectionWrapper } from '../hoc';
-import { styles } from '../styles';
 import { fadeIn, textVariant } from '../utils/motion';
 import { testimonials } from '../constants';
 
@@ -39,14 +38,14 @@ const FeedbackCard = ({index,testimonial,name,designation,company,image}) => (
 const Feedbacks = () => {
   return (
     <div className='testimonials'>
-      <div className={`${styles.padding} feedback-div`}>
+      <div className={`${'padding'} feedback-div`}>
         <motion.div variants={textVariant()}>
-          <p className={styles.sectionSubText}>What others say</p>
-          <h2 className={styles.sectionHeadText}>Testimonials.</h2>
+          <p className={'sectionSubText'}>What others say</p>
+          <h2 className={'sectionHeadText'}>Testimonials.</h2>
         </motion.div>
       </div>
 
-      <div className={`${styles.paddingX} testimonial-card`}>
+      <div className={`${'paddingX'} testimonial-card`}>
         {testimonials.map((testimonial, index)=>(
           <FeedbackCard
             key={testimonial.name}

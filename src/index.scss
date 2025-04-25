@@ -28,6 +28,15 @@
       font-family: Arima;
     }
 }
+::-webkit-scrollbar{
+  @apply bg-primary;
+}
+::-webkit-scrollbar-thumb{
+  @apply bg-blue rounded-lg;
+}
+::-webkit-scrollbar-corner{
+  @apply hidden;
+}
 // styles
 .hash-span {
     margin-top: -100px;
@@ -47,19 +56,19 @@
       #000000
     ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
-.violet-gradient {
-    background: #804dee;
-    background: linear-gradient(-90deg, #804dee 0%, rgba(60, 51, 80, 0) 100%);
+.blue-gradient {
+    background: #123192;
+    background: linear-gradient(-90deg, #123192 0%, rgba(60, 51, 80, 0) 100%);
     background: -webkit-linear-gradient(
       -90deg,
-      #804dee 0%,
+      #123192 0%,
       rgba(60, 51, 80, 0) 100%
     );
   }
-.green-pink-gradient {
+.green-blue-gradient {
     background: "#00cea8";
-    background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
-    background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+    background: linear-gradient(90.13deg, #00cea8 1.9%, #2563eb 97.5%);
+    background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #2563eb 97.5%);
   }
 .orange-text-gradient {
     background: #f12711; /* fallback for old browsers */
@@ -143,7 +152,6 @@
 .sectionSubText{
  @apply sm:text-[14px] text-[12px] text-secondary uppercase tracking-wider;
 }
-
 
   /* canvas- styles */
 .canvas-loader {
@@ -233,7 +241,6 @@
         -2.6em 0em 0 0em rgba(255, 255, 255, 0.7), -1.8em -1.8em 0 0em #ffffff;
     }
   }
-
 .main-container{
     @apply relative z-0 bg-primary;
 }
@@ -301,35 +308,35 @@ nav{
         @apply flex flex-col justify-center items-center mt-5;
     }
     .hero-circle{
-        @apply w-5 h-5 rounded-full bg-purple;
+        @apply w-5 h-5 rounded-full bg-blue;
     }
     .hero-line{
-        @apply w-1  h-40 violet-gradient;
+        @apply w-1  h-40 blue-gradient;
     }
     .hero-name{
-      @apply text-purple;
+      @apply text-blue-200;
     }
     p{
       @apply mt-2 text-white-100;
     }
     .scroll-container{
-      @apply absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center;
+      @apply absolute md:bottom-10 bottom-36 w-full flex justify-center items-center z-10;
 
       .scroll-border{
-        @apply w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2;
+        @apply w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2 z-10;
       }
       .scroll-ball{
-        @apply w-3 aspect-square rounded-full bg-secondary mb-1;
+        @apply w-3 h-3  rounded-full bg-secondary mb-2 z-10;
       }
     }
 }
 .about{
   .about-text{
-    @apply mt-4 text-secondary text-lg max-w-3xl md:leading-7 xs:text-sm xs:leading-5;
+    @apply mt-4 text-secondary text-lg max-w-4xl md:leading-7 xs:text-sm xs:leading-5;
   }
 }
 .service-cards-container{
-  @apply mt-20 flex flex-wrap gap-10 xs:mx-auto xs:w-1/2 md:w-full;
+  @apply mt-6 flex flex-wrap gap-10 xs:mx-auto xs:w-1/2 md:w-full;
 }
 .service-card-container{
  @apply xs:w-[250px] w-full;
@@ -377,48 +384,30 @@ nav{
   @apply flex flex-row flex-wrap justify-center gap-5;
 
   .balls{
-    @apply xs:w-16 md:w-20 aspect-square;
+    @apply xs:w-16 md:w-28 aspect-square;
   }  
 }
 .works{
   .container{
     @apply  w-full flex;
     .motion-p{
-      @apply mt-3 text-white text-lg max-w-3xl md:leading-7 xs:text-sm xs:leading-5;
+      @apply mt-3 mb-6 text-white text-lg max-w-3xl md:leading-7 xs:text-sm xs:leading-5;
     }
   }
   .project{
     @apply  mt-20 flex flex-wrap gap-7 lg:items-start xs:my-auto xs:items-center;
   }
 }
-.project-card{
-  .tilt{
-    @apply bg-tertiary p-5 rounded-2xl w-full sm:w-[360px];
-  }
+.project-cards-container{
+  @apply md:w-[350px] w-full;
   .project-card-container{
     @apply relative w-full h-[230px];
-
-    img{
-      @apply w-full h-full object-cover rounded-2xl;
-    }
-    .project-card-div{
-      @apply absolute inset-0 flex justify-end m-3;
-    }
-    .project-link{
-      @apply w-10 h-10 black-gradient rounded-full flex justify-center items-center cursor-pointer;
-    }
-    .project-links{
-      @apply flex gap-x-1;
-    }
-    .github-link{
-      @apply w-1/2 h-1/2 object-contain;
-    }
-    .website-link{
-      @apply w-full h-full object-contain p-[1px];
-    }
+  }
+  .project-card{
+    @apply  p-[1px] rounded-2xl;
   }
   .project-card-description{
-    @apply mt-5;
+    @apply mt-5 ;
 
     h3{
       @apply text-white font-bold md:text-xl sm:text-lg xs:text-base;
@@ -429,6 +418,30 @@ nav{
   }
   .tag-div{
     @apply mt-4 flex flex-wrap gap-2;
+  }
+  .project-card-div{
+    @apply w-full p-[1px] rounded-2xl;
+   }
+   .project-card-bg{
+    @apply bg-tertiary rounded-2xl p-5 min-h-[580px] flex justify-evenly items-center flex-col;
+   }
+   img{
+    @apply w-full h-full object-cover rounded-2xl;
+  }
+  .project-card-img-div{
+    @apply absolute inset-0 flex justify-end m-3;
+  }
+  .project-link{
+    @apply w-10 h-10 black-gradient rounded-full flex justify-center items-center cursor-pointer;
+  }
+  .project-links{
+    @apply flex gap-x-1;
+  }
+  .github-link{
+    @apply w-1/2 h-1/2 object-contain;
+  }
+  .website-link{
+    @apply w-full h-full object-contain p-[1px];
   }
 }
 .testimonials{
@@ -476,26 +489,29 @@ nav{
   }
 }
 .contact{
-  @apply xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden;
+  @apply xl:mt-4 xl:flex-row flex-col-reverse flex gap-6 overflow-hidden;
 
   .contact-motion-div{
-    @apply flex-[0.75] bg-black-100 p-8 rounded-2xl;
+    @apply flex-[1.75] bg-black-100 p-8 rounded-2xl;
   }
   .form-container{
-    @apply mt-12 flex flex-col gap-8;
+    @apply mt-8 flex flex-col gap-4;
 
     label{
-      @apply flex flex-col;
+      @apply flex flex-col text-sm;
 
       span{
-        @apply text-white font-medium mb-4;
+        @apply text-white font-medium mb-2;
       }
       input, textarea{
         @apply bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium;
       }
     }
+    input{
+      @apply text-sm h-4;
+    }
     button{
-      @apply bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl;
+      @apply bg-tertiary py-2 px-6 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl hover:bg-black-200 hover:text-secondary;
     }
   }
   .Earth-Canvas-Div{

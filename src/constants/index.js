@@ -111,15 +111,16 @@ import {
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Freelance",
-      icon: hwdlogo,
+      title: "Stay-At-Home Parent",
+      company_name: "Mom",
+      icon: parent,
       iconBg: "#383E56",
-      date: "March 2022 - April 2023",
+      date: "December 2017 - Present",
       points: [
-        "Developed cutting-edge React applications, optimizing performance and user experience. Implemented state-of-the-art solutions, driving significant improvements in application responsiveness.",
-      'Meticulously crafted reusable React components, enhancing code maintainability. Implemented rigorous testing protocols, significantly reducing bug occurrence in production.',
-      'Conducted thorough code reviews, identifying and resolving critical issues. Implemented robust testing strategies, significantly reducing production bugs and improving overall application stability.'
+        'Built positive and nurturing environments to support child social and emotional growth.',
+        'Bathed, dressed, and helped with teeth brushing as part of bedtime preparation.',
+        'Prepared meals and snacks for child based on dietary guidelines.',
+        'Handled incoming mail, bills and invoices and completed appropriate actions.'       
       ],
     },
     {
@@ -135,18 +136,19 @@ import {
       ],
     },
     {
-      title: "Stay-At-Home Parent",
-      company_name: "Mom",
-      icon: parent,
+      title: "React.js Developer",
+      company_name: "Freelance",
+      icon: hwdlogo,
       iconBg: "#383E56",
-      date: "December 2017 - Present",
+      date: "March 2022 - April 2023",
       points: [
-        'Built positive and nurturing environments to support child social and emotional growth.',
-        'Bathed, dressed, and helped with teeth brushing as part of bedtime preparation.',
-        'Prepared meals and snacks for child based on dietary guidelines.',
-        'Handled incoming mail, bills and invoices and completed appropriate actions.'       
+        "Developed cutting-edge React applications, optimizing performance and user experience. Implemented state-of-the-art solutions, driving significant improvements in application responsiveness.",
+      'Meticulously crafted reusable React components, enhancing code maintainability. Implemented rigorous testing protocols, significantly reducing bug occurrence in production.',
+      'Conducted thorough code reviews, identifying and resolving critical issues. Implemented robust testing strategies, significantly reducing production bugs and improving overall application stability.'
       ],
     },
+
+
   ];
   
   const testimonials = [
@@ -157,7 +159,7 @@ import {
     {
       name: "Calculator",
       description:
-        "An online calculator that enables users to perform basic mathematical operations, offering a convenient and efficient tool for both personal and professional use. Created with:",
+        "An online calculator that enables users to perform basic mathematical operations. Created with:",
       tags: [
         {
           name: "react",
@@ -208,7 +210,7 @@ import {
     },
     {
       name: "Sanity Portfolio",
-      description: "This document serves as my initial portfolio in web development, showcasing various web applications and websites that demonstrate my technical expertise.",
+      description: "This site serves as my initial portfolio in web development, showcasing various websites.",
       tags: [
         {
           name: "react",
@@ -237,7 +239,7 @@ import {
     },
     {
       name: "Todo App",
-      description: "This application is a web-based task management tool designed to assist users in managing their tasks. It features an intuitive interface that facilitates the easy entry and removal of tasks.",
+      description: "This website  task management tool features an intuitive interface that facilitates the easy entry and removal of tasks.",
       tags: [
         {
           name: "react",
