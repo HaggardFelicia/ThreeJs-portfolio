@@ -42,7 +42,7 @@ const Navbar = () => {
             src={toggle ? close : menu} alt='menu'
             onClick={()=> setToggle(!toggle)}
           />
-          <div className={`mobile-nav-container black-gradient ${!toggle ? 'hidden': 'flex'}`}>
+          <div className={`mobile-nav-container gray-blue-gradient ${!toggle ? 'hidden': 'flex'}`}>
             <ul className='mobile-link-container'>
             {/* Mapping out nav links from constants */}
               {navLinks.map((link)=>(
